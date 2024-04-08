@@ -16,11 +16,11 @@ class Contact{
         this.city = city;
     }
     protected void display(){
-        System.out.println("First Name : " + firstName);
-        System.out.println("Last Name : " + lastName);
+        System.out.println("First Name\t : " + firstName);
+        System.out.println("Last Name\t : " + lastName);
         System.out.println("Phone Number : " + phoneNumber);
-        System.out.println("Institution : " + institution);
-        System.out.println("City : " + city);
+        System.out.println("Institution\t : " + institution);
+        System.out.println("City\t\t : " + city);
     }
     protected String getFirstName(){
         return firstName;
@@ -59,15 +59,15 @@ public class Main {
     private static void insert(ArrayList<Contact> contacts){
         Scanner scanner = new Scanner(System.in);
         String firstName , lastName , city , phoneNumber, institution;
-        System.out.print("First Name : ");
+        System.out.print("First Name\t : ");
         firstName = scanner.nextLine();
-        System.out.print("Last Name : ");
+        System.out.print("Last Name\t : ");
         lastName = scanner.nextLine();
         System.out.print("Phone Number : ");
         phoneNumber = scanner.nextLine();
-        System.out.print("Institution: ");
+        System.out.print("Institution\t : ");
         institution = scanner.nextLine();
-        System.out.print("City : ");
+        System.out.print("City\t\t : ");
         city = scanner.nextLine();
         Contact contact = new Contact(firstName, lastName, phoneNumber, institution, city);
         contacts.add(contact);
